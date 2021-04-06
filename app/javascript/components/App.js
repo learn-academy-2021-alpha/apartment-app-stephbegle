@@ -1,5 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route, Switch
+} from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Apartments from './pages/Apartments';
+import Home from './pages/Home';
+
 class App extends React.Component {
   render() {
     const {
@@ -10,7 +18,8 @@ class App extends React.Component {
       sign_out_route
     } = this.props
     return (
-      <React.Fragment>
+      <Router>
+        <Switch>
         { logged_in &&
           <div>
             <a href={sign_out_route }>Sign Out</a>
@@ -21,7 +30,11 @@ class App extends React.Component {
             <a href={ sign_in_route }>Sign In</a>
           </div>
         }
-      </React.Fragment>
+        <Route exact path="/" component={ Home } />
+        <Route path="/apartments" component={ Apartments } />
+        {/* <Route path= component={ Addapartment } */}
+        </Switch>
+      </Router>
     )
   }
 }
