@@ -1,5 +1,6 @@
-let apartments = [
+let apts = [
     {
+        id: 1,
         street: 'Pomona',
         city: 'Coronado',
         state: 'Ca',
@@ -14,6 +15,7 @@ let apartments = [
         updated_at: Date.today
     },
     {
+        id: 2,
         street: 'Flanders',
         city: 'Pacific Beach',
         state: 'Ca',
@@ -28,6 +30,7 @@ let apartments = [
         updated_at: Date.today
     },
     {
+        id: 3,
         street: 'Lucy',
         city: 'National City',
         state: 'Ca',
@@ -42,6 +45,7 @@ let apartments = [
         updated_at: Date.today
     },
     {
+        id: 4,
         street: 'Hawthorne',
         city: 'North Park',
         state: 'Ca',
@@ -57,4 +61,4 @@ let apartments = [
     }
 ]
 
-export default apartments
+export default apts

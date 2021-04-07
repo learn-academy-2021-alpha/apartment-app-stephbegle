@@ -9,9 +9,16 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Apartments from './pages/Apartments';
 import Home from './pages/Home';
-// import apts from './mockApts.js';
+import apts from './mockApts.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      apts: apts
+    }
+  }
+
   render() {
     const {
       logged_in,
@@ -20,6 +27,7 @@ class App extends Component {
       sign_in_route,
       sign_out_route
     } = this.props
+
     return (
       <Router>
           { logged_in &&
@@ -28,7 +36,8 @@ class App extends Component {
               <Header />
               <Route exact path="/" component={ Home } />
               <Switch>
-                <Route path="/apartments" component={ Apartments } />
+                <Route path="/apartments"
+                render= { () => <Apartments apts= { this.state.apts }  /> } />
               </Switch>
             </div>
           }
