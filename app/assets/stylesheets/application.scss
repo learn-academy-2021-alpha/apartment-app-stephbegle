@@ -20,6 +20,7 @@ padding: 0px;
 margin: 0px; 
 } 
 
+/*--------------- App Home ---------------*/ 
 .app-title {
     color: rgb(94, 131, 138);
     background-color: rgb(204, 226, 212);
@@ -51,6 +52,25 @@ margin: 0px;
 .navlink {
     font-size: 1rem;
     color: black !important;
+}
+
+/*--------------- Apartments Index ---------------*/ 
+.apt-index-container {
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.apt-index-title {
+    font-size: 2rem;
+    color: green;
+}
+
+.apt-cards {
+    max-width: 20rem;
+}
+
+.card-spacing {
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    display: flex;
 }
 
  

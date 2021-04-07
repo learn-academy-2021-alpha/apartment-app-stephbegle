@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Apartments from './pages/Apartments';
 import Home from './pages/Home';
 import mockApts from './mockApts.js';
+import ShowApartment from "./pages/ShowApartment";
 
 class App extends Component {
   constructor(props) {
@@ -40,6 +41,11 @@ class App extends Component {
           <Route exact path="/" component={ Home } />
           <Route path="/apartments" render= { (props) => <Apartments apartments={ this.state.apartments } />} 
           />
+          <Route path="/showapartment/:id" render={ (props) => {
+            const id = +props.match.params.id;
+            const foundApt = this.state.apartments.find(apt => apt.id === id);
+            return <ShowApartment apt = { foundApt } /> 
+          }} />
         </Switch>
       </Router>
     )

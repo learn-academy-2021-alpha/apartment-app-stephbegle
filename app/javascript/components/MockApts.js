@@ -1,6 +1,7 @@
 let mockApts = [
     {
         id: 1,
+        title: "Beautiful Cottage",
         street: 'Pomona',
         city: 'Coronado',
         state: 'Ca',
@@ -17,6 +18,7 @@ let mockApts = [
     },
     {
         id: 2,
+        title: "Beautiful Cottage",
         street: 'Flanders',
         city: 'Pacific Beach',
         state: 'Ca',
@@ -33,6 +35,7 @@ let mockApts = [
     },
     {
         id: 3,
+        title: "Beautiful Cottage",
         street: 'Lucy',
         city: 'National City',
         state: 'Ca',
@@ -49,6 +52,7 @@ let mockApts = [
     },
     {
         id: 4,
+        title: "Beautiful Cottage",
         street: 'Hawthorne',
         city: 'North Park',
         state: 'Ca',
