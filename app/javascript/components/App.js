@@ -4,18 +4,17 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import { Nav, NavItem } from 'reactstrap';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Apartments from './pages/Apartments';
 import Home from './pages/Home';
-import apts from './mockApts.js';
+import mockApts from './mockApts.js';
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      apts: apts
+      apartments: mockApts
     }
   }
 
@@ -25,27 +24,23 @@ class App extends Component {
       current_user,
       new_user_route,
       sign_in_route,
-      sign_out_route
+      sign_out_route,
+      sign_up_route
     } = this.props
 
     return (
       <Router>
-          { logged_in &&
-            <div>
-              <a href={ sign_out_route }>Sign Out</a>
-              <Header />
-              <Route exact path="/" component={ Home } />
-              <Switch>
-                <Route path="/apartments"
-                render= { () => <Apartments apts= { this.state.apts }  /> } />
-              </Switch>
-            </div>
-          }
-          { !logged_in &&
-            <div>
-              <a href={ sign_in_route }>Sign In</a>
-            </div>
-          }
+        <Header
+          logged_in={ logged_in }
+          sign_in_route={ sign_in_route}
+          sign_out_route={ sign_out_route}
+          sign_up_route={ sign_up_route}
+        />
+        <Switch>
+          <Route exact path="/" component={ Home } />
+          <Route path="/apartments" render= { (props) => <Apartments apartments={ this.state.apartments } />} 
+          />
+        </Switch>
       </Router>
     )
   }

@@ -7,7 +7,7 @@ class Apartments extends Component {
       <>
       <h1>Apartments list page</h1>
       <ul>
-        { this.props.apts.map(apt => {
+        { this.props.apartments.map(apt => {
           return (
             <li key={ apt.id }>
               { apt.city }
@@ -17,7 +17,6 @@ class Apartments extends Component {
       </ul>
       </>
     )
-    
   }
 }
 export default Apartments

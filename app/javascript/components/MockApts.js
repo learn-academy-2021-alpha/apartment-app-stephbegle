@@ -1,4 +1,4 @@
-let apts = [
+let mockApts = [
     {
         id: 1,
         street: 'Pomona',
@@ -61,4 +61,4 @@ let apts = [
     }
 ]
 
-export default apts
+export default mockApts

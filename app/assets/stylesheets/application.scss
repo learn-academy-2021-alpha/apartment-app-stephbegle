@@ -14,4 +14,23 @@
  *= require_self
  */
  @import 'bootstrap';
+* { 
+padding: 0px; 
+margin: 0px; 
+} 
+.app-title {
+    color: black;
+    background-color: rgb(190, 188, 188);
+    width: 100%;
+}
+
+.navbar {
+    background-color: rgb(190, 188, 188);
+}
+
+.navlink {
+    font-size: 1rem;
+    color: black;
+}
+
  
