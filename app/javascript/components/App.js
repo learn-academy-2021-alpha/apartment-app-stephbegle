@@ -1,14 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 import {
   BrowserRouter as Router,
-  Route, Switch
+  Route,
+  Switch
 } from 'react-router-dom';
+import { Nav, NavItem } from 'reactstrap';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Apartments from './pages/Apartments';
 import Home from './pages/Home';
+// import apts from './mockApts.js';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     const {
       logged_in,
@@ -19,21 +22,21 @@ class App extends React.Component {
     } = this.props
     return (
       <Router>
-        <Switch>
-        { logged_in &&
-          <div>
-            <a href={sign_out_route }>Sign Out</a>
-          </div>
-        }
-        { !logged_in &&
-          <div>
-            <a href={ sign_in_route }>Sign In</a>
-          </div>
-        }
-        <Route exact path="/" component={ Home } />
-        <Route path="/apartments" component={ Apartments } />
-        {/* <Route path= component={ Addapartment } */}
-        </Switch>
+          { logged_in &&
+            <div>
+              <a href={ sign_out_route }>Sign Out</a>
+              <Header />
+              <Route exact path="/" component={ Home } />
+              <Switch>
+                <Route path="/apartments" component={ Apartments } />
+              </Switch>
+            </div>
+          }
+          { !logged_in &&
+            <div>
+              <a href={ sign_in_route }>Sign In</a>
+            </div>
+          }
       </Router>
     )
   }

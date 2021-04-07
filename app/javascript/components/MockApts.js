@@ -1,4 +1,4 @@
-apartments = [
+let apartments = [
     {
         street: 'Pomona',
         city: 'Coronado',
@@ -56,3 +56,5 @@ apartments = [
         updated_at: Date.today
     }
 ]
+
+export default apartments
