@@ -19,7 +19,7 @@ class Header extends Component {
 
     return (
       <>
-      <NavbarBrand className="app-title" href="/">Apartment Hunter</NavbarBrand>
+      <h1 className="app-title">Apartment Hunter</h1>
       <Nav className="navbar">
         <NavItem className="navlink">
           <NavLink to="/">Home</NavLink>
@@ -39,7 +39,6 @@ class Header extends Component {
           </NavItem>
         }
       </Nav>
-      <h1>Header top of home page</h1>
       </>
     )
   }

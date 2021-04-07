@@ -12,7 +12,8 @@ let mockApts = [
         pets: 'no',
         user_id: 1,
         created_at: Date.today,
-        updated_at: Date.today
+        updated_at: Date.today,
+        img: "https://cdngeneral.rentcafe.com/dmslivecafe/3/788339/GS_The_District_Two_Bed_Kit_Liv_Din(1).jpg?crop=(0,2.749999999999716,300,194)&cropxunits=300&cropyunits=200&quality=85&scale=both&"
     },
     {
         id: 2,
@@ -27,7 +28,8 @@ let mockApts = [
         pets: 'yes',
         user_id: 1,
         created_at: Date.today,
-        updated_at: Date.today
+        updated_at: Date.today,
+        img: "https://cdngeneral.rentcafe.com/dmslivecafe/3/788339/GS_The_District_Two_Bed_Kit_Liv_Din(1).jpg?crop=(0,2.749999999999716,300,194)&cropxunits=300&cropyunits=200&quality=85&scale=both&"
     },
     {
         id: 3,
@@ -42,7 +44,8 @@ let mockApts = [
         pets: 'yes',
         user_id: 1,
         created_at: Date.today,
-        updated_at: Date.today
+        updated_at: Date.today,
+        img: "https://cdngeneral.rentcafe.com/dmslivecafe/3/788339/GS_The_District_Two_Bed_Kit_Liv_Din(1).jpg?crop=(0,2.749999999999716,300,194)&cropxunits=300&cropyunits=200&quality=85&scale=both&"
     },
     {
         id: 4,
@@ -57,7 +60,8 @@ let mockApts = [
         pets: 'yes',
         user_id: 1,
         created_at: Date.today,
-        updated_at: Date.today
+        updated_at: Date.today,
+        img: "https://cdngeneral.rentcafe.com/dmslivecafe/3/788339/GS_The_District_Two_Bed_Kit_Liv_Din(1).jpg?crop=(0,2.749999999999716,300,194)&cropxunits=300&cropyunits=200&quality=85&scale=both&"
     }
 ]
 

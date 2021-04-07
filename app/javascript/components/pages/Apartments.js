@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button
+} from 'reactstrap';
 
 class Apartments extends Component {
   render() {
@@ -11,6 +15,7 @@ class Apartments extends Component {
           return (
             <li key={ apt.id }>
               { apt.city }
+              <img src={ apt.img } />
             </li>
           )
         })}
@@ -19,4 +24,6 @@ class Apartments extends Component {
     )
   }
 }
+
 export default Apartments
+
