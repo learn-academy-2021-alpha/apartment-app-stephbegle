@@ -14,9 +14,10 @@ class AddApartment extends Component {
         manager: '',
         email: '',
         price: '',
-        bathrooms: '',
         bedrooms: '',
+        bathrooms: '',
         pets: '',
+        user_id: '',
         title: '',
         img: ''
       },

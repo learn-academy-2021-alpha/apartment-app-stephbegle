@@ -7,10 +7,12 @@ class CreateApartments < ActiveRecord::Migration[6.1]
       t.string :manager
       t.string :email
       t.string :price
-      t.integer :bathrooms 
       t.integer :bedrooms
+      t.integer :bathrooms
       t.string :pets
       t.integer :user_id
+      t.string :title
+      t.string :img
 
       t.timestamps
     end
