@@ -9,13 +9,13 @@ let mockApts = [
         bedrooms: 2,
         bathrooms: 2,
         pets: 'no',
-        manager: 'Tom Bill',
-        email: 'tombill@gmail.com',
+        manager: 'Deborah Turner',
+        email: 'dturner@gmail.com',
         img: "https://cdngeneral.rentcafe.com/dmslivecafe/3/788339/GS_The_District_Two_Bed_Kit_Liv_Din(1).jpg?crop=(0,2.749999999999716,300,194)&cropxunits=300&cropyunits=200&quality=85&scale=both&"
     },
     {
         id: 2,
-        title: "Beautiful Cottage",
+        title: "Beach Front Home",
         price: '$1,800',
         street: 'Flanders',
         city: 'Pacific Beach',
@@ -25,25 +25,25 @@ let mockApts = [
         pets: 'yes',
         manager: 'Tyler Smith',
         email: 'tylersmith@gmail.com',
-        img: "https://cdngeneral.rentcafe.com/dmslivecafe/3/788339/GS_The_District_Two_Bed_Kit_Liv_Din(1).jpg?crop=(0,2.749999999999716,300,194)&cropxunits=300&cropyunits=200&quality=85&scale=both&"
+        img: "https://www.missionbeach.com/custimages/1%20Website%20Photos/Menu/vaca.jpg"
     },
     {
         id: 3,
-        title: "Beautiful Cottage",
+        title: "Poolside Condo",
         price: '$2,200',
         street: 'Lucy',
         city: 'National City',
         state: 'Ca',
         bedrooms: 2,
         bathrooms: 3,
-        pets: 'yes',
+        pets: 'no',
         manager: 'Romina Camile',
         email: 'rominacamile@gmail.com',
-        img: "https://cdngeneral.rentcafe.com/dmslivecafe/3/788339/GS_The_District_Two_Bed_Kit_Liv_Din(1).jpg?crop=(0,2.749999999999716,300,194)&cropxunits=300&cropyunits=200&quality=85&scale=both&"
+        img: "https://rentpath-res.cloudinary.com/w_558,h_386,t_rp,cs_tinysrgb,fl_force_strip,c_fill/e_unsharp_mask:50,q_auto/61b976a3459609469a75bfa6404f3d66"
     },
     {
         id: 4,
-        title: "Beautiful Cottage",
+        title: "Quaint Lively Condo",
         price: '$3,800',
         street: 'Hawthorne',
         city: 'North Park',
@@ -53,7 +53,63 @@ let mockApts = [
         pets: 'yes',
         manager: 'Janett Lang',
         email: 'janettlang@gmail.com',
-        img: "https://cdngeneral.rentcafe.com/dmslivecafe/3/788339/GS_The_District_Two_Bed_Kit_Liv_Din(1).jpg?crop=(0,2.749999999999716,300,194)&cropxunits=300&cropyunits=200&quality=85&scale=both&"
+        img: "https://images1.apartments.com/i2/wBImDim5cC6pmQ6GmaKazONdRq3PhNNDrpBkI175xM8/117/vida-north-park-san-diego-ca-building-photo.jpg?p=1"
+    },
+    {
+        id: 5,
+        title: "Cozy Farmy Apart-y",
+        price: '$3,800',
+        street: 'Bernardo',
+        city: 'Rancho Bernardo',
+        state: 'Ca',
+        bedrooms: 4,
+        bathrooms: 3,
+        pets: 'yes',
+        manager: 'Bill Fences',
+        email: 'janettlang@gmail.com',
+        img: "https://cdn.apartmenttherapy.info/image/upload/v1559222909/cs/2019/at/state%20farm/kevin/2019StateFarm-2.jpg"
+    },
+    {
+        id: 6,
+        title: "Town House Living",
+        price: '$2,100',
+        street: '3rd Ave.',
+        city: 'Chula Vista',
+        state: 'Ca',
+        bedrooms: 2,
+        bathrooms: 2,
+        pets: 'yes',
+        manager: 'Janett Lang',
+        email: 'janettlang@gmail.com',
+        img: "https://www.myfirstapartment.com/wp-content/uploads/2016/03/San-Jose.jpg"
+    },
+    {
+        id: 7,
+        title: "Chavo Barrel",
+        price: '$100',
+        street: 'Ocho',
+        city: 'Bonita',
+        state: 'Ca',
+        bedrooms: 3,
+        bathrooms: 3,
+        pets: 'no',
+        manager: 'El Chavo',
+        email: 'chavo@hotmail.com',
+        img: "https://elcomercio.pe/resizer/wTR1DhSdc6Dx1DDa30QETEtuy6Y=/980x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/JWTFYIX3GRFVNOCXITCAVDHY7E.jpg"
+    },
+    {
+        id: 8,
+        title: "Cool Apartment",
+        price: '$7,500',
+        street: 'Pomona',
+        city: 'Coronado',
+        state: 'Ca',
+        bedrooms: 1,
+        bathrooms: 1,
+        pets: 'no',
+        manager: 'Deborah Turner',
+        email: 'dturner@gmail.com',
+        img: "https://images.squarespace-cdn.com/content/v1/5bc5dd89f8135a188f4d62a5/1583663745335-T5FLG7EKJM04Q89JMI9Q/ke17ZwdGBToddI8pDm48kChFtl5EkdQykgvACRh3Pu4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcKVIZ05sTY1cUJfpPrm2gWUtO7-4vYwz63rq69i5P7jBcOlb710wI_-1dQsm7Lv8o/A+Cool+Industrial+Scandinavian+Loft+-+The+Nordroom"
     }
 ]
 

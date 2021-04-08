@@ -22,11 +22,19 @@ padding: 0px;
 margin: 0px; 
 } 
 
+:root {
+    --primary-pearl: rgb(221, 250, 255);
+    --primary-blue: rgb(96, 197, 255);
+    --primary-grey: rgb(111, 122, 121);
+    --primary-light: rgb(201, 201, 201);
+    --primary-black: rgb(48, 48, 48);
+}
+
 /*--------------- App Home ---------------*/ 
 .app-title {
     font-family: 'Lobster', cursive;
-    color: rgb(94, 131, 138);
-    background-color: rgb(204, 226, 212);
+    color: var(--primary-blue);
+    background-color: var(--primary-pearl);
     text-align: center;
     margin-bottom: 0;
     padding: 1rem 0 1rem 0;
@@ -34,24 +42,42 @@ margin: 0px;
 
 .typed-text {
     text-align: center !important;
-    color: rgb(79, 151, 163);
+    color: var(--primary-blue);
     font-size: 2rem;
-    font-family: 'Lobster', cursive;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .home-jumbo {
     margin-bottom: 0rem !important;
     text-align: center;
     padding: 1.5rem !important;
+    background-color: var(--primary-pearl);
 }
 
-.home-img {
-    width: 100%;
-    height: 100%;
+.home-img-1 {
+    width: 50%;
+    height: 50%;
+}
+
+.home-img-2 {
+    width: 50%;
+    height: 50%;
+}
+
+.home-img-3 {
+    width: 50%;
+    height: 50%;
+    padding-bottom: 2rem;
+}
+
+.home-img-4 {
+    width: 50%;
+    height: 50%;
+    padding-bottom: 2rem;
 }
 
 .navbar {
-    background-color: rgb(204, 226, 212);
+    background-color: var(--primary-pearl);
     color: black;
 }
 
@@ -68,29 +94,41 @@ margin: 0px;
 .apt-index-title {
     font-size: 2rem;
     font-family: 'Fjalla One', sans-serif;
-    color: rgb(111, 122, 121);
-    padding: 3rem 0 0.5rem 0.2rem;
+    color: var(--primary-black);
+    padding: 3rem 0 0.5rem 4rem;
 }
 
 .apt-cards {
+    display: grid;
     max-width: 20rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows:min-content;
+    grid-gap: 1rem;
 }
 
 .card-spacing {
-    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-    display: flex;
+    display: grid;
+    padding: 0.2rem 0.2rem 5rem 4rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: min-content;
+    grid-gap: 1rem;
 }
+
+.cursor {
+    cursor: pointer;
+  }
 
 /*--------------- Show Apartment ---------------*/ 
 .show-title {
     font-size: 2rem;
     font-family: 'Fjalla One', sans-serif;
-    color: rgb(111, 122, 121);
+    color: var(--primary-black);
     padding: 3rem 0 0.5rem 0.2rem;
 }
 
 .show-info {
     padding: 0.5rem 0 1rem 0.3rem;
+    margin-bottom: 15rem;
 }
 
 /*--------------- Add New Apartment ---------------*/ 
@@ -102,14 +140,14 @@ margin: 0px;
 .add-title {
     font-size: 2rem;
     font-family: 'Fjalla One', sans-serif;
-    color: rgb(111, 122, 121);
+    color: var(--primary-black);
     padding: 3rem 0 0.5rem 0rem;
     text-align: center;
 }
 
 .new-form {
     text-align: center;
-    background-color: rgb(173, 173, 173);
+    background-color: var(--primary-light);
     border-radius: 3%;
     padding: 2rem 2rem 2rem 2rem;
     text-align: left;
@@ -122,9 +160,9 @@ margin: 0px;
   position:fixed;
   bottom: 0;
   width: 100%;
-  color: rgb(204, 226, 212);
+  color: var(--primary-blue);
   font-family: 'Fjalla One', sans-serif;
-  background-color: rgb(94, 131, 138);
+  background-color: var(--primary-pearl);
   margin: 0;
   padding: 0.5rem;
   text-align: center;
@@ -143,7 +181,7 @@ margin: 0px;
 
 .error-message {
     font-size: 3rem;
-    color:rgb(111, 122, 121);
+    color:var(--primary-black);
     font-family: 'Fjalla One', sans-serif;
     padding: 3rem 0 1.5rem 0;
 }
