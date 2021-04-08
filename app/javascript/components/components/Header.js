@@ -38,7 +38,7 @@ class Header extends Component {
           </NavItem>}
           { !logged_in &&
           <NavItem className="navlink">
-            <a href={sign_in_route }>Sign In</a>
+            <a href={ sign_in_route }>Sign In</a>
           </NavItem>
         }
       </Nav>

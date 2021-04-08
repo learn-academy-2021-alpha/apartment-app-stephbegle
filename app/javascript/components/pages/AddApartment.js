@@ -8,16 +8,16 @@ class AddApartment extends Component {
     super(props)
     this.state = {
       form: {
-        title: '',
-        price: '',
         street: '',
         city: '',
         state: '',
-        bedrooms: '',
-        bathrooms: '',
-        pets: '',
         manager: '',
         email: '',
+        price: '',
+        bathrooms: '',
+        bedrooms: '',
+        pets: '',
+        title: '',
         img: ''
       },
       submitted: false
