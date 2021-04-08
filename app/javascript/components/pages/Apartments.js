@@ -16,15 +16,21 @@ class Apartments extends Component {
         <div className="card-spacing">
           { this.props.apartments.map(apt => {
             return (
-              <Card className="apt-cards">
-              <CardImg top width="100%" src={ apt.img } alt="Card image cap" />
-                <CardBody key={ apt.id }>
-                <CardTitle tag="h5">{ apt.title }</CardTitle>
-                <CardSubtitle tag="h6" className="mb-2 text-muted">{ apt.city }, { apt.state}</CardSubtitle>
-                <CardText>{ apt.bedrooms } Bed/{ apt.bathrooms }Bath. A beautiful apartment on { apt.street } St.</CardText>
-                <Button href={`/showapartment/${apt.id}`}>Take a look</Button>
-              </CardBody>
-            </Card>
+              <Card key={ apt.id } className="apt-cards">
+                <CardImg top width="100%" src={ apt.img } alt="Card image cap" />
+                <CardBody>
+                    <CardTitle 
+                      tag="h5">{ apt.title }
+                    </CardTitle>
+                    <CardSubtitle 
+                      tag="h6" className="mb-2 text-muted">{ apt.city }, { apt.state}
+                    </CardSubtitle>
+                    <CardText>
+                      { apt.bedrooms } Bed/{ apt.bathrooms }Bath. A beautiful apartment on { apt.street } St.
+                    </CardText>
+                  <Button href={`/showapartment/${apt.id}`}>Take a look</Button>
+                </CardBody>
+              </Card>
             )
           })}
         </div>
