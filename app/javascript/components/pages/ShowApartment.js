@@ -7,14 +7,17 @@ class ShowApartment extends Component {
     
     return (
       <>
-      <h2>Rent: { apt.price}</h2>
-      <h3>{ apt.title }</h3>
-      <h4>Street: { apt.street } St., { apt.city }, { apt.state}</h4>
-      <h4>Bedrooms: { apt.bedrooms}</h4>
-      <h4>Bathrooms: { apt.bathrooms}</h4>
-      <h4>Pets allowed: { apt.pets}</h4>
+      <h2>{ apt.title }</h2>
+      <img src={ apt.img}/>
+      <h3>Rent: { apt.price}</h3>
+      <h5>2547 { apt.street } St., { apt.city }, { apt.state}</h5>
+      <h5>Bedrooms: { apt.bedrooms}</h5>
+      <h5>Bathrooms: { apt.bathrooms}</h5>
+      <h5>Pets allowed: { apt.pets}</h5>
+      <h6>Date Created: { apt.created_at}</h6>
       </>
     )
   }
 }
+
 export default ShowApartment

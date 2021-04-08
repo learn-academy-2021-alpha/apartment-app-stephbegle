@@ -12,7 +12,7 @@ class Apartments extends Component {
       <>
       {/* need to add key id to be able to show each apartment */}
       <div className="apt-index-container">
-        <h1 className="apt-index-title">Apartment Listings</h1>
+        <h1 className="apt-index-title">Listings:</h1>
         <div className="card-spacing">
           { this.props.apartments.map(apt => {
             return (
