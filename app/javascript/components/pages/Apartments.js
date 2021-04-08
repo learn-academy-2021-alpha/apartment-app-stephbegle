@@ -28,7 +28,7 @@ class Apartments extends Component {
                     <CardText>
                       { apt.bedrooms } Bed/{ apt.bathrooms }Bath. A beautiful apartment on { apt.street } St.
                     </CardText>
-                  <Button href={`/showapartment/${apt.id}`}>Take a look</Button>
+                  <Button style={{background:"rgb(94, 131, 138)"}} href={`/showapartment/${apt.id}`}>Take a look</Button>
                 </CardBody>
               </Card>
             )

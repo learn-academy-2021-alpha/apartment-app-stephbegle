@@ -29,6 +29,10 @@ class Header extends Component {
           <NavLink to="/apartments">Apartments</NavLink>
         </NavItem>
 
+        <NavItem className="navlink">
+          <NavLink to="/newapartment">Add Listing</NavLink>
+        </NavItem>
+
         { logged_in &&
           <NavItem className="navlink">
               <a href={ sign_out_route }>Sign Out</a>
@@ -44,5 +48,5 @@ class Header extends Component {
   }
 }
   
-  export default Header
+export default Header
   

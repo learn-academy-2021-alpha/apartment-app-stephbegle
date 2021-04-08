@@ -6,10 +6,12 @@ import {
 } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import NotFound from './pages/NotFound';
 import Apartments from './pages/Apartments';
 import Home from './pages/Home';
 import mockApts from './mockApts.js';
-import ShowApartment from "./pages/ShowApartment";
+import ShowApartment from './pages/ShowApartment';
+import AddApartment from './pages/AddApartment';
 
 class App extends Component {
   constructor(props) {
@@ -17,6 +19,10 @@ class App extends Component {
     this.state = {
       apartments: mockApts
     }
+  }
+
+  createNewApt = (newapt) => {
+    console.log(newapt)
   }
 
   render() {
@@ -46,7 +52,12 @@ class App extends Component {
             const foundApt = this.state.apartments.find(apt => apt.id === id);
             return <ShowApartment apt = { foundApt } /> 
           }} />
+          <Route path="/newapartment" render={ (props) => {
+            return <AddApartment createNewApt = { this.createNewApt } />
+          }}/>
+          <Route path="/notfound" component={ NotFound } />
         </Switch>
+        <Footer />
       </Router>
     )
   }
