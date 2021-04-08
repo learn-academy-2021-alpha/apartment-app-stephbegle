@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { NavLink, Switch } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import {
   Nav,
-  NavItem,
-  NavbarBrand
+  NavItem
 } from 'reactstrap';
 
 class Header extends Component {
