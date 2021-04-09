@@ -31,7 +31,7 @@ class AddApartment extends Component {
     this.setState({ form: form })
   }
 
-  handleSummit = () => {
+  handleSubmit = () => {
     this.props.createNewApt(this.state.form)
     this.setState({ submitted: true })
   }

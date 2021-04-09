@@ -21,6 +21,19 @@ class App extends Component {
     }
   }
 
+  // getApartments = () => {
+  //   fetch("http://localhost:3000/apartments")
+  //   .then(response => {
+  //     return response.json
+  //   })
+  //   .then(apartment => {
+  //     this.setState({ apartments: apartment})
+  //   })
+  //   .catch(errors => {
+  //     console.log("apartment index errors", errors)
+  //   })
+  // }
+
   createNewApt = (newapt) => {
     console.log(newapt)
   }

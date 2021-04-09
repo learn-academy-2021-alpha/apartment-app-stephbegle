@@ -4,6 +4,11 @@ class ApartmentsController < ApplicationController
         apartments = Apartment.all
     end
 
+    def show
+        apartment = Apartment.find(params[:id])
+        render json: apartment
+    end
+
     def create
         apartment = Apartment.create(apt_params)
         (apartment.valid?) ? (render json: apartment) : (render json: apartment.errors, status: :unprocessable_entity)
